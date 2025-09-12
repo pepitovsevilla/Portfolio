@@ -40,11 +40,11 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
-        Hi I&#39;m a{' '}
+        Hi I&#39;m Pepito Sevilla, a{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Frontend
+          Web Developer
         </span>{' '}
-        developer creating modern web apps.
+        creating modern web apps.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
