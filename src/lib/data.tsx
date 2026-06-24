@@ -85,7 +85,7 @@ export const projectsData: readonly TProjectData[] = [
   {
     title: 'Youth Sports Tournament Platform',
     industry: 'Sports / youth football',
-    role: 'Full-stack',
+    role: 'Reviewer',
     description:
       'A registration and information platform for a national youth football tournament — team sign-up, schedules, and tournament details.',
     technologies: ['Next.js', 'AWS Amplify (Gen 2)'],
