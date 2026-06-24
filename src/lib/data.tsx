@@ -23,7 +23,19 @@ export const links = [
   },
 ] as const;
 
-export const projectsData = [
+export type TProjectData = {
+  title: string;
+  industry: string;
+  role: string;
+  description: string;
+  technologies: readonly string[];
+  /** Public live URL. If set, the card is treated as public (clickable, no privacy overlay). */
+  link?: string;
+  /** Card thumbnail. Private projects use a pre-blurred image baked into the file. */
+  image?: string;
+};
+
+export const projectsData: readonly TProjectData[] = [
   {
     title: 'Membership Management Platform',
     industry: 'Membership organization',
@@ -31,6 +43,7 @@ export const projectsData = [
     description:
       'A member directory, event recording, and marketplace for a membership organization, with a built-in CMS for managing news and content.',
     technologies: ['Next.js', 'Payload CMS', 'FastAPI', 'PostgreSQL', 'AWS'],
+    image: '/images/membership.webp',
   },
   {
     title: 'Public Auction Notice Portal',
@@ -39,6 +52,8 @@ export const projectsData = [
     description:
       'Digitizes court-issued property-auction notices with OCR and publishes them in a searchable, publicly accessible portal.',
     technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
+    link: 'https://auctionph.com/',
+    image: '/images/auction.webp',
   },
   {
     title: 'Inventory & Order Management System',
@@ -47,6 +62,7 @@ export const projectsData = [
     description:
       'A multi-company business system covering inventory and stock, purchase and sales orders, and accounting — with PDF document generation.',
     technologies: ['Next.js', 'Chakra UI', 'AWS'],
+    image: '/images/inventory.webp',
   },
   {
     title: 'Repairs & Maintenance System',
@@ -55,6 +71,7 @@ export const projectsData = [
     description:
       'A role-based platform for tracking equipment repairs across stores — ticketing, technician scheduling and visits, and service reports — with a desktop admin console and dedicated mobile apps per role.',
     technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
+    image: '/images/maintenance.webp',
   },
   {
     title: 'Insurance Sales & Management Platform',
@@ -63,6 +80,17 @@ export const projectsData = [
     description:
       'A multi-brand platform where customers purchase and manage insurance policies, and agents handle sales and recruit and oversee sub-agents.',
     technologies: ['Next.js', 'Chakra UI'],
+    image: '/images/insurance.webp',
+  },
+  {
+    title: 'Youth Sports Tournament Platform',
+    industry: 'Sports / youth football',
+    role: 'Full-stack',
+    description:
+      'A registration and information platform for a national youth football tournament — team sign-up, schedules, and tournament details.',
+    technologies: ['Next.js', 'AWS Amplify (Gen 2)'],
+    link: 'https://www.laligayouth.com/',
+    image: '/images/sports.webp',
   },
 ] as const;
 

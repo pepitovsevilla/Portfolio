@@ -6,6 +6,7 @@ import {
   ChevronDown,
   Download,
   ExternalLink,
+  EyeOff,
   Github,
   Linkedin,
   Lock,
@@ -28,6 +29,7 @@ export const Icons = {
   calendar: Calendar,
   building: Building2,
   lock: Lock,
+  eyeOff: EyeOff,
   audiophile: (props: LucideProps) => (
     <svg
       width="64"

@@ -42,9 +42,9 @@ export const Projects = () => {
           <Icons.lock className="size-4" />
         </span>
         <p className="text-foreground text-left text-sm font-medium">
-          These are private, client-owned projects — their codebases and live
-          sites aren&apos;t publicly viewable, so each one is described here
-          instead.
+          Most of these are private, client-owned projects — their codebases and
+          live sites aren&apos;t public, so previews are blurred. The public
+          ones link straight to the live site.
         </p>
       </motion.div>
       <div className="grid gap-7 md:grid-cols-2">
