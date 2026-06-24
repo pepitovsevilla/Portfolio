@@ -99,7 +99,7 @@ export const experiencesData = [
     title: 'System Engineer / Web Developer',
     company: 'O-Kun Frontier Innovations Inc.',
     description:
-      "I build full-stack web apps for clients in insurance, distribution, retail, and public records. I handle the whole build — database schemas, system architecture, frontend, backend, and the AWS infrastructure and CI/CD that run it. I scope requirements directly with clients and review my teammates' code.",
+      "I build full-stack web apps for clients in insurance, distribution, retail, and public records — handling the whole build, from database schemas and system architecture to frontend, backend, and the AWS infrastructure and CI/CD that run it. I scope requirements directly with clients and review my teammates' code.",
     period: '2024 - present',
     technologies: [
       'Next.js',

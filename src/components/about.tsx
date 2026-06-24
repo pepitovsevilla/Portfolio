@@ -32,8 +32,8 @@ export const About = () => {
         <div className="max-w-2xl text-center leading-7 md:text-left">
           <p className="mb-4">
             I&apos;m Pepito Sevilla, a full-stack software engineer based in
-            Metro Manila. I build web apps across the full stack — the frontend,
-            the API, the database, and the cloud they run on.
+            Metro Manila. I build web apps end to end — the frontend, the API,
+            the database, and the cloud infrastructure they run on.
           </p>
           <p className="mb-4">
             I also lead teams, and I have a background in learning and
@@ -41,9 +41,9 @@ export const About = () => {
             and business sides.
           </p>
           <p>
-            I&apos;ve worked on software systems for businesses across different
-            industries. I work with clients to find their real pain points, then
-            craft solutions that fit.
+            I&apos;ve built software systems for businesses across different
+            industries. I partner with clients to find their real pain points,
+            then craft solutions that fit.
           </p>
         </div>
       </div>
