@@ -21,21 +21,21 @@ export const About = () => {
       <SectionHeading heading="About Me" />
       <div className="-mt-5 max-w-2xl text-center leading-7">
         <p className="mb-4">
-          I&apos;m Michał Skolak, I&apos;m a front-end developer from Poland.
-          I&apos;ve been learning programming for over 3 years. After I started
-          high school, I decided to pursue my passion for programming. My
-          favorite part of programming is the problem-solving aspect. I love the
-          feeling of finally figuring out a solution to a problem. I&apos;ve had
-          the opportunity to work on several exciting projects during my
-          learning journey, ranging from personal projects to collaborative
-          ventures. My core stack is React, Next.js, TypeScript, and Tailwind
-          CSS. I am also familiar with Nest.js and Prisma. I&apos;m always
-          looking to learn new technologies.
+          I&apos;m Pepito Sevilla, a full-stack software engineer based in Metro
+          Manila. I like building things that ship — and owning them the whole
+          way down, from the interface a user clicks to the API, database, and
+          cloud infrastructure running underneath. I didn&apos;t start in tech:
+          I spent years designing training programs in the insurance industry
+          before teaching myself to code and making the jump into software
+          engineering.
         </p>
         <p>
-          I&apos;m open to Job opportunities where I can contribute, learn and
-          grow. If you have a good opportunity that matches my skills and
-          experience then don&apos;t hesitate to contact me.
+          Since then I&apos;ve built production web apps for real businesses —
+          insurance platforms, ERP and inventory systems, field-service tools,
+          and public-sector portals. I&apos;m at my best turning vague, messy
+          requirements into something clean and reliable that people actually
+          use, and I&apos;m always up for a harder problem. If you have one,
+          let&apos;s talk.
         </p>
       </div>
       <Skills />

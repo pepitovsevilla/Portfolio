@@ -1,8 +1,4 @@
-import Link from 'next/link';
-
-import { buttonVariants } from '@/components/button';
 import { Icons } from '@/components/icons';
-import { cn } from '@/lib/utils';
 
 export const links = [
   {
@@ -29,94 +25,89 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/project-2.webp',
-    title: 'Next-starter',
+    title: 'Membership Management Platform',
+    industry: 'Membership organization',
+    role: 'Full-stack',
     description:
-      'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
-    technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
-    links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
-    },
+      'A member directory, event recording, and marketplace for a membership organization, with a built-in CMS for managing news and content.',
+    technologies: ['Next.js', 'Payload CMS', 'FastAPI', 'PostgreSQL', 'AWS'],
   },
   {
-    image: '/images/project-1.webp',
-    title: 'SocialHub',
+    title: 'Public Auction Notice Portal',
+    industry: 'Legal / public-notice',
+    role: 'Full-stack',
     description:
-      'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
-    technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
-    links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
-    },
+      'Digitizes court-issued property-auction notices with OCR and publishes them in a searchable, publicly accessible portal.',
+    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
+  },
+  {
+    title: 'Inventory & Order Management System',
+    industry: 'Veterinary distribution',
+    role: 'Full-stack',
+    description:
+      'A multi-company business system covering inventory and stock, purchase and sales orders, and accounting — with PDF document generation.',
+    technologies: ['Next.js', 'Chakra UI', 'AWS'],
+  },
+  {
+    title: 'Repairs & Maintenance System',
+    industry: 'Retail (milk tea chain)',
+    role: 'Full-stack',
+    description:
+      'A role-based platform for tracking equipment repairs across stores — ticketing, technician scheduling and visits, and service reports — with a desktop admin console and dedicated mobile apps per role.',
+    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
+  },
+  {
+    title: 'Insurance Sales & Management Platform',
+    industry: 'Insurance (Japan)',
+    role: 'Frontend',
+    description:
+      'A multi-brand platform where customers purchase and manage insurance policies, and agents handle sales and recruit and oversee sub-agents.',
+    technologies: ['Next.js', 'Chakra UI'],
   },
 ] as const;
 
 export const experiencesData = [
   {
-    title: 'Web developer intern',
-    company: 'WEB-BOX, Tarnobrzeg PL',
+    title: 'System Engineer / Web Developer',
+    company: 'O-Kun Frontier Innovations Inc.',
     description:
-      'During this internship, I focused on two key areas: creating Wordpress plugins and managing website content, plugins, and settings.',
-    period: '2023',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Wordpress'],
-  },
-  {
-    title: 'Frontend developer & UI designer',
-    company: 'Freelancing, remote',
-    description:
-      'As a freelancer, I specialized in graphic design using Figma and website development using Next.js with Sanity CMS. I undertook projects independently, from design conceptualization to final implementation, ensuring client satisfaction.',
-    period: '2023 - 2024',
-    technologies: ['Next.js', 'TypeScript', 'Sanity CMS', 'Tailwind'],
-  },
-  {
-    title: 'Frontend developer intern',
-    company: 'Chop-chop, remote',
-    description:
-      'During my internship at Chop-Chop, I collaborated with an experienced IT team, focusing on tasks in Next.js. This experience provided valuable insights into teamwork and advanced my proficiency in Next.js.',
-    period: '2024',
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind'],
-  },
-  {
-    title: 'Frontend developer & UI designer',
-    company: 'GeoScan, remote',
-    description: (
-      <>
-        At GeoScan, I collaborate with frontend, backend, and GIS specialists to
-        build{' '}
-        <Link
-          className={cn(
-            buttonVariants({ variant: 'link' }),
-            'm-0 h-fit p-0 text-base'
-          )}
-          href="https://geoscan-app.com"
-          target="_blank"
-        >
-          geoscan-app.com
-        </Link>{' '}
-        — a platform for generating real estate reports. I’m responsible for
-        developing and maintaining the frontend, as well as designing UI/UX to
-        ensure a clear and intuitive user experience.
-      </>
-    ),
+      "Build and ship full-stack web apps end-to-end for clients across insurance, ERP, field-service, and public-sector domains. I design database schemas and multi-tenant, role-based architectures, own AWS infrastructure as code (CDK) and CI/CD, consult directly with stakeholders to scope tailored solutions, and review teammates' code.",
     period: '2024 - present',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Leaflet'],
+    technologies: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'FastAPI',
+      'Node.js',
+      'PostgreSQL',
+      'AWS',
+    ],
+  },
+  {
+    title: 'Senior Content & Curriculum Development Specialist',
+    company: 'Pru Life UK',
+    description:
+      'Designed and delivered training programs and curricula for insurance products, compliance, and sales, and managed the Litmos LMS with regional stakeholders. This built the insurance domain knowledge, technical documentation, and communication skills I now bring to engineering.',
+    period: '2018 - 2024',
+    technologies: [
+      'Insurance domain',
+      'Litmos LMS',
+      'Training',
+      'Documentation',
+    ],
   },
 ] as const;
 
 export const skillsData = [
-  { icon: <Icons.html className="size-12" /> },
-  { icon: <Icons.css className="size-12" /> },
-  { icon: <Icons.sass className="size-12" /> },
-  { icon: <Icons.tailwind className="size-12" /> },
-  { icon: <Icons.javascript className="size-12" /> },
-  { icon: <Icons.typescript className="size-12" /> },
   { icon: <Icons.react className="size-12" /> },
-  { icon: <Icons.redux className="size-12" /> },
   { icon: <Icons.nextjs className="size-12" /> },
-  { icon: <Icons.nestjs className="size-12" /> },
+  { icon: <Icons.typescript className="size-12" /> },
+  { icon: <Icons.javascript className="size-12" /> },
+  { icon: <Icons.tailwind className="size-12" /> },
+  { icon: <Icons.nodejs className="size-12" /> },
+  { icon: <Icons.python className="size-12" /> },
+  { icon: <Icons.postgresql className="size-12" /> },
   { icon: <Icons.prisma className="size-12" /> },
   { icon: <Icons.docker className="size-12" /> },
+  { icon: <Icons.aws className="size-12" /> },
 ] as const;

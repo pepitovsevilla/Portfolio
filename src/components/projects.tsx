@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+import { Icons } from '@/components/icons';
 import { Project } from '@/components/project';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
@@ -27,10 +28,26 @@ export const Projects = () => {
       >
         <SectionHeading
           heading="My Projects"
-          content="Projects I worked on. Each of them containing its own case study."
+          content="Production systems I've built for real businesses."
         />
       </motion.div>
-      <div className="flex flex-col gap-7 md:flex-row">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+        viewport={{ once: true }}
+        className="border-primary/30 bg-primary/5 mx-auto mb-10 flex max-w-2xl items-center gap-3 rounded-lg border px-5 py-4"
+      >
+        <span className="bg-primary/10 text-primary flex size-9 shrink-0 items-center justify-center rounded-full">
+          <Icons.lock className="size-4" />
+        </span>
+        <p className="text-foreground text-left text-sm font-medium">
+          These are private, client-owned projects — their codebases and live
+          sites aren&apos;t publicly viewable, so each one is described here
+          instead.
+        </p>
+      </motion.div>
+      <div className="grid gap-7 md:grid-cols-2">
         {projectsData.map((project, index) => (
           <Project key={project.title} project={project} index={index} />
         ))}

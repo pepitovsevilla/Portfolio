@@ -42,9 +42,9 @@ export const Intro = () => {
       >
         Hi I&#39;m Pepito Sevilla, a{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Web Developer
+          Software Engineer
         </span>{' '}
-        creating modern web apps.
+        building web apps from infrastructure to interface.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
@@ -54,8 +54,9 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        A frontend developer based in the Poland. I&#39;m passionate about
-        building modern web applications using Next.js, React, and Tailwind CSS.
+        A full-stack software engineer based in Mandaluyong, Philippines. I
+        build web apps end-to-end — from the interface down to the API,
+        database, and cloud infrastructure underneath.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -71,13 +72,13 @@ export const Intro = () => {
           </Link>
         </Button>
         <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
-          <a href="/michalskolak.pdf" download>
+          <a href="/pepito-sevilla-resume.pdf" download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
         </Button>
         <Button variant="outline" size="icon" asChild>
           <Link
-            href="https://www.linkedin.com/in/micha%C5%82-skolak-06905524b"
+            href="https://www.linkedin.com/in/pepito-sevilla-252825157/"
             aria-label="Linkedin"
             target="_blank"
           >
@@ -86,7 +87,7 @@ export const Intro = () => {
         </Button>
         <Button variant="outline" size="icon" asChild>
           <Link
-            href="https://github.com/Skolaczk"
+            href="https://github.com/pepitovsevilla"
             aria-label="Github"
             target="_blank"
           >
