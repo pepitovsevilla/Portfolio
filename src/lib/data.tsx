@@ -41,7 +41,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Membership organization',
     role: 'Full-stack',
     description:
-      'A member directory, event recording, and marketplace for a membership organization, with a built-in CMS for managing news and content.',
+      'A directory, events, and marketplace for a membership organization. It also has a CMS for news and content.',
     technologies: ['Next.js', 'Payload CMS', 'FastAPI', 'PostgreSQL', 'AWS'],
     image: '/images/membership.webp',
   },
@@ -50,7 +50,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Legal / public-notice',
     role: 'Full-stack',
     description:
-      'Digitizes court-issued property-auction notices with OCR and publishes them in a searchable, publicly accessible portal.',
+      'Scans court auction notices with OCR. Publishes them in a public portal anyone can search.',
     technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
     link: 'https://auctionph.com/',
     image: '/images/auction.webp',
@@ -60,7 +60,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Veterinary distribution',
     role: 'Full-stack',
     description:
-      'A multi-company business system covering inventory and stock, purchase and sales orders, and accounting — with PDF document generation.',
+      'Runs stock, purchase and sales orders, and accounting for a distributor. It works across multiple companies and generates PDF documents.',
     technologies: ['Next.js', 'Chakra UI', 'AWS'],
     image: '/images/inventory.webp',
   },
@@ -69,7 +69,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Retail (milk tea chain)',
     role: 'Full-stack',
     description:
-      'A role-based platform for tracking equipment repairs across stores — ticketing, technician scheduling and visits, and service reports — with a desktop admin console and dedicated mobile apps per role.',
+      'Tracks equipment repairs across stores. Staff file tickets, technicians get scheduled visits, and each job ends in a service report. It has a desktop admin console and a mobile app for every role.',
     technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
     image: '/images/maintenance.webp',
   },
@@ -78,7 +78,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Insurance (Japan)',
     role: 'Frontend',
     description:
-      'A multi-brand platform where customers purchase and manage insurance policies, and agents handle sales and recruit and oversee sub-agents.',
+      'Customers buy and manage insurance policies. Agents handle sales and recruit sub-agents. It runs across multiple brands.',
     technologies: ['Next.js', 'Chakra UI'],
     image: '/images/insurance.webp',
   },
@@ -87,7 +87,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Sports / youth football',
     role: 'Reviewer',
     description:
-      'A registration and information platform for a national youth football tournament — team sign-up, schedules, and tournament details.',
+      'Handles team sign-up, schedules, and details for a national youth football tournament.',
     technologies: ['Next.js', 'AWS Amplify (Gen 2)'],
     link: 'https://www.laligayouth.com/',
     image: '/images/sports.webp',
@@ -99,7 +99,7 @@ export const experiencesData = [
     title: 'System Engineer / Web Developer',
     company: 'O-Kun Frontier Innovations Inc.',
     description:
-      "Build and ship full-stack web apps end-to-end for clients across insurance, ERP, field-service, and public-sector domains. I design database schemas and multi-tenant, role-based architectures, own AWS infrastructure as code (CDK) and CI/CD, consult directly with stakeholders to scope tailored solutions, and review teammates' code.",
+      "I build full-stack web apps for clients in insurance, distribution, retail, and public records. I handle the whole build — database schemas, system architecture, frontend, backend, and the AWS infrastructure and CI/CD that run it. I scope requirements directly with clients and review my teammates' code.",
     period: '2024 - present',
     technologies: [
       'Next.js',
@@ -115,7 +115,7 @@ export const experiencesData = [
     title: 'Senior Content & Curriculum Development Specialist',
     company: 'Pru Life UK',
     description:
-      'Designed and delivered training programs and curricula for insurance products, compliance, and sales, and managed the Litmos LMS with regional stakeholders. This built the insurance domain knowledge, technical documentation, and communication skills I now bring to engineering.',
+      'I designed training programs for insurance products, compliance, and sales. I ran the company learning platform with regional teams. That work gave me the insurance knowledge and the communication skills I use in engineering today.',
     period: '2018 - 2024',
     technologies: [
       'Insurance domain',

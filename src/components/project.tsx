@@ -67,7 +67,7 @@ export const Project = ({ project, index }: TProps) => {
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
               />
-              <div className="bg-background/30 text-muted-foreground absolute inset-0 flex flex-col items-center justify-center gap-1.5 backdrop-blur-sm">
+              <div className="bg-background/20 text-muted-foreground absolute inset-0 flex flex-col items-center justify-center gap-1.5">
                 <Icons.eyeOff className="size-6" />
                 <span className="text-xs font-medium">Preview hidden</span>
               </div>

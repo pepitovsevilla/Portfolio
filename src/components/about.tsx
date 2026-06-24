@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import { SectionHeading } from '@/components/section-heading';
 import { Skills } from '@/components/skills';
@@ -19,24 +20,32 @@ export const About = () => {
       transition={{ delay: 0.175 }}
     >
       <SectionHeading heading="About Me" />
-      <div className="-mt-5 max-w-2xl text-center leading-7">
-        <p className="mb-4">
-          I&apos;m Pepito Sevilla, a full-stack software engineer based in Metro
-          Manila. I like building things that ship — and owning them the whole
-          way down, from the interface a user clicks to the API, database, and
-          cloud infrastructure running underneath. I didn&apos;t start in tech:
-          I spent years designing training programs in the insurance industry
-          before teaching myself to code and making the jump into software
-          engineering.
-        </p>
-        <p>
-          Since then I&apos;ve built production web apps for real businesses —
-          insurance platforms, ERP and inventory systems, field-service tools,
-          and public-sector portals. I&apos;m at my best turning vague, messy
-          requirements into something clean and reliable that people actually
-          use, and I&apos;m always up for a harder problem. If you have one,
-          let&apos;s talk.
-        </p>
+      <div className="-mt-5 flex flex-col items-center gap-8 md:flex-row md:items-start md:gap-10">
+        <Image
+          src="/images/profile.webp"
+          alt="Pepito Sevilla"
+          width={200}
+          height={200}
+          priority
+          className="size-40 shrink-0 rounded-full border object-cover md:size-48"
+        />
+        <div className="max-w-2xl text-center leading-7 md:text-left">
+          <p className="mb-4">
+            I&apos;m Pepito Sevilla, a full-stack software engineer based in
+            Metro Manila. I build web apps across the full stack — the frontend,
+            the API, the database, and the cloud they run on.
+          </p>
+          <p className="mb-4">
+            I also lead teams, and I have a background in learning and
+            development — so I explain things clearly and connect the technical
+            and business sides.
+          </p>
+          <p>
+            I&apos;ve worked on software systems for businesses across different
+            industries. I work with clients to find their real pain points, then
+            craft solutions that fit.
+          </p>
+        </div>
       </div>
       <Skills />
     </motion.section>
