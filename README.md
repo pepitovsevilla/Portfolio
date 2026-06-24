@@ -45,6 +45,12 @@ Then open http://localhost:3000.
 | `npm run typecheck` | Type-check with `tsc` |
 | `npm run format:write` | Format with Prettier |
 
+## Credits
+
+This site is based on the open-source portfolio template by
+[Michał Skolak (Skolaczk)](https://github.com/Skolaczk/Portfolio). Thanks for
+the great starting point.
+
 ## Contact
 
 [pepitovsevilla13@gmail.com](mailto:pepitovsevilla13@gmail.com)
