@@ -1,36 +1,50 @@
-## 🎉 Project Overview
-My personal portfolio website built using Next.js, Tailwind CSS and Framer-motion.
+# Portfolio — Pepito Sevilla
 
-## 📍 Live 
+My personal portfolio website. Built with Next.js, Tailwind CSS, and Framer Motion, and deployed on Vercel.
 
-Link to the live version: [https://michalskolak.vercel.app](https://michalskolak.vercel.app)
+## Tech stack
 
-## 💾 Installation 
-Download the project to your computer and install needed packages with command:
+- **Next.js** (App Router) + **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** — animations
+- **React Hook Form** + **Zod** — contact form and validation
+- **Resend** — contact form email
 
-```bash
-$ npm install
-```
-Then create .env file:
-```bash
-SITE_URL='https://example.com' ## Required to generate sitemap by next-sitemap 
-RESEND_API_KEY='your_resend_api_key' ## Required to send email by resend
-```
+## Getting started
 
-Then start the project on the local server with the command:
+Install dependencies:
 
 ```bash
-$ npm run dev
+npm install
 ```
 
-and open http://localhost:3000 to see this app.
+Create a `.env` file in the project root:
 
-## 🔧 Tech/framework used 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- Framer-motion
-- React-hook-form
-- Resend
+```bash
+SITE_URL='https://example.com'        # used by next-sitemap
+RESEND_API_KEY='your_resend_api_key'  # used by Resend for the contact form
+```
 
-If you encounter a problem, write to this e-mail address: [skolakmichal1@gmail.com](mailto:skolakmichal1@gmail.com)
+Start the dev server:
+
+```bash
+npm run dev
+```
+
+Then open http://localhost:3000.
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the dev server (Turbopack) |
+| `npm run build` | Production build |
+| `npm run start` | Run the production build |
+| `npm run lint` | Run ESLint |
+| `npm run typecheck` | Type-check with `tsc` |
+| `npm run format:write` | Format with Prettier |
+
+## Contact
+
+[pepitovsevilla13@gmail.com](mailto:pepitovsevilla13@gmail.com)
