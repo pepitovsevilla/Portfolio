@@ -100,6 +100,8 @@ export const projectsData: readonly TProjectData[] = [
     role: 'Reviewer',
     description:
       'Handles team sign-up, schedules, and details for a national youth football tournament.',
+    architecture:
+      'A Next.js frontend backed entirely by AWS Amplify (Gen 2) — Cognito for role-based logins, an AppSync and DynamoDB data layer for teams and registrations, and S3 for uploaded documents.',
     technologies: ['Next.js', 'AWS Amplify (Gen 2)'],
     link: 'https://www.laligayouth.com/',
     image: '/images/sports.webp',
