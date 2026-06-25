@@ -117,7 +117,8 @@ export const projectsData: readonly TProjectData[] = [
 export const experiencesData = [
   {
     title: 'System Engineer / Web Developer',
-    company: 'O-Kun Frontier Innovations Inc.',
+    company: 'OFI Inc. (O-KUN Frontier Innovations)',
+    link: 'https://o-fi.io/',
     description:
       "I build full-stack web apps for clients in insurance, distribution, retail, and public records. I take projects across the whole stack — frontend, backend, and the AWS infrastructure and CI/CD behind them — and help decide which services each project uses and how its data flows. I also scope requirements directly with clients and review my teammates' code.",
     period: '2024 - present',
@@ -134,6 +135,7 @@ export const experiencesData = [
   {
     title: 'Senior Content & Curriculum Development Specialist',
     company: 'Pru Life UK',
+    link: 'https://www.prulifeuk.com.ph/en/',
     description:
       'I designed training programs for insurance products, compliance, and sales, and ran the company learning platform with regional teams. It is where I built the insurance domain knowledge and the knack for explaining complex things clearly that I still rely on as an engineer.',
     period: '2018 - 2024',

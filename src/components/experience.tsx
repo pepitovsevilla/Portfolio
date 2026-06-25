@@ -24,7 +24,7 @@ export const Experience = () => {
       />
       <div className="relative max-w-screen-md">
         {experiencesData.map(
-          ({ title, description, company, period, technologies }) => (
+          ({ title, description, company, link, period, technologies }) => (
             <div
               key={company}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
@@ -50,7 +50,18 @@ export const Experience = () => {
                   <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
                     <Icons.building className="size-5" />
                   </div>
-                  <span className="text-lg font-semibold">{company}</span>
+                  {link ? (
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-lg font-semibold hover:underline"
+                    >
+                      {company}
+                    </a>
+                  ) : (
+                    <span className="text-lg font-semibold">{company}</span>
+                  )}
                 </div>
                 <div>
                   <h3 className="text-xl font-medium">{title}</h3>
