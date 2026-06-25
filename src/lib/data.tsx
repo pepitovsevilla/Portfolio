@@ -177,7 +177,7 @@ export const skillGroups: readonly TSkillGroup[] = [
     skills: [
       { name: 'AWS', icon: <Icons.aws className="size-5" /> },
       { name: 'Docker', icon: <Icons.docker className="size-5" /> },
-      { name: 'CI/CD' },
+      { name: 'GitHub Actions' },
     ],
   },
 ] as const;
