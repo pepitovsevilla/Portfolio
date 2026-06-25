@@ -79,7 +79,7 @@ export const projectsData: readonly TProjectData[] = [
     description:
       'A field-service system for a milk-tea chain’s equipment repairs. Store staff file tickets, an admin groups them into scheduled technician visits, and every job closes with a service report — through a desktop admin console and mobile-friendly views for each role.',
     architecture:
-      'One Next.js codebase serves role-specific desktop and mobile views on AWS Amplify (Gen 2). Public Lambdas handle auth, email, and storage, then call VPC Lambdas that reach PostgreSQL (RDS) via Prisma; Amazon Bedrock drafts ticket titles and initial priority. Cognito groups and store assignments drive what each role sees.',
+      'A single Next.js app serves role-specific desktop and mobile views on AWS Amplify (Gen 2). Public Lambdas handle auth, email, and storage, then call VPC Lambdas that reach PostgreSQL (RDS) via Prisma; Amazon Bedrock drafts ticket titles and initial priority. Cognito groups and store assignments drive what each role sees.',
     technologies: [
       'Next.js',
       'Prisma',
@@ -94,9 +94,9 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Insurance (Japan)',
     role: 'Frontend',
     description:
-      'Customers buy and manage insurance policies, while agents handle sales and recruit sub-agents. It runs across several insurance brands from one codebase.',
+      'Customers buy and manage insurance policies, while agents handle sales and recruit sub-agents. It runs across several insurance brands.',
     architecture:
-      'A Next.js frontend (Chakra UI) serving several brands from one shared codebase — brand flows through context and theming, with per-brand configuration driving the screens. It talks to the backend through a generated OpenAPI client.',
+      'A single Next.js app (Chakra UI) serves several brands — brand flows through context and theming, with per-brand configuration driving the screens. It talks to the backend through a generated OpenAPI client.',
     technologies: ['Next.js', 'Chakra UI', 'React Hook Form'],
     image: '/images/insurance.webp',
   },
