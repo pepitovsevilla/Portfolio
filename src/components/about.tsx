@@ -35,6 +35,10 @@ export const About = () => {
             Metro Manila. I&apos;ve built software systems for businesses across
             insurance, distribution, retail, and public records.
           </p>
+          <p className="mb-4">
+            I work across the whole stack — frontend, API, database, and AWS
+            infrastructure.
+          </p>
           <p>
             I also lead teams, and my background in learning and development
             means I can explain technical work clearly and bridge the gap

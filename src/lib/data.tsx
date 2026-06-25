@@ -162,17 +162,13 @@ export const skillGroups: readonly TSkillGroup[] = [
     ],
   },
   {
-    label: 'Backend',
+    label: 'Backend & Data',
     skills: [
       { name: 'Node.js', icon: <Icons.nodejs className="size-5" /> },
       { name: 'Python', icon: <Icons.python className="size-5" /> },
       { name: 'FastAPI' },
-    ],
-  },
-  {
-    label: 'Data',
-    skills: [
       { name: 'PostgreSQL', icon: <Icons.postgresql className="size-5" /> },
+      { name: 'DynamoDB' },
       { name: 'Prisma', icon: <Icons.prisma className="size-5" /> },
     ],
   },
