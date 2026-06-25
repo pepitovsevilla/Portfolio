@@ -27,8 +27,8 @@ export const Projects = () => {
         }}
       >
         <SectionHeading
-          heading="My Projects"
-          content="Production systems I've built for real businesses."
+          heading="Projects"
+          content="Production systems I've helped build for real businesses."
         />
       </motion.div>
       <motion.div
