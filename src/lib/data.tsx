@@ -168,7 +168,7 @@ export const skillGroups: readonly TSkillGroup[] = [
       { name: 'Python', icon: <Icons.python className="size-5" /> },
       { name: 'FastAPI', icon: <Icons.fastapi className="size-5" /> },
       { name: 'PostgreSQL', icon: <Icons.postgresql className="size-5" /> },
-      { name: 'DynamoDB' },
+      { name: 'DynamoDB', icon: <Icons.dynamodb className="size-5" /> },
       { name: 'Prisma', icon: <Icons.prisma className="size-5" /> },
     ],
   },
