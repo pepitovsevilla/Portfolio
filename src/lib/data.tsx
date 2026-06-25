@@ -43,10 +43,10 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Membership organization',
     role: 'Full-stack',
     description:
-      'A directory, events, and marketplace for a membership organization. It also has a CMS for news and content.',
+      'A platform for a membership organization: a member directory, events with QR-code attendance, and a member marketplace, plus a CMS for publishing news and content.',
     architecture:
-      'A Next.js frontend talks to a FastAPI service and a Payload CMS, both backed by PostgreSQL on AWS.',
-    technologies: ['Next.js', 'Payload CMS', 'FastAPI', 'PostgreSQL', 'AWS'],
+      'A Next.js frontend backed by a FastAPI service and a Payload CMS over PostgreSQL, with editorial content from Sanity. It runs on AWS ECS Fargate, provisioned with CDK and shipped through blue-green deploys.',
+    technologies: ['Next.js', 'FastAPI', 'Payload CMS', 'PostgreSQL', 'AWS'],
     image: '/images/membership.webp',
   },
   {
@@ -54,10 +54,10 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Legal / public-notice',
     role: 'Full-stack',
     description:
-      'Scans court auction notices with OCR. Publishes them in a public portal anyone can search.',
+      'A free public portal for Philippine court auction notices. It turns scanned Sheriff’s notices into structured records you can search and filter by region, property type, court, and auction date, and signed-in users can save listings and set auction-date reminders.',
     architecture:
-      'Notices are read with OCR, stored in PostgreSQL through Prisma, and served by a public Next.js search portal on AWS.',
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
+      'A separate OCR pipeline parses notices into PostgreSQL (Aurora). A Next.js frontend reads them through AWS Amplify (Gen 2) GraphQL APIs backed by Prisma, with Cognito for accounts and S3 holding the original documents.',
+    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS Amplify (Gen 2)'],
     link: 'https://auctionph.com/',
     image: '/images/auction.webp',
   },
@@ -66,10 +66,10 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Veterinary distribution',
     role: 'Full-stack',
     description:
-      'Runs stock, purchase and sales orders, and accounting for a distributor. It works across multiple companies and generates PDF documents.',
+      'An inventory, ordering, and accounting system for a veterinary-products distributor. It runs purchase and sales orders, tracks stock batches with expiry, manages payments, and generates PDF invoices and vouchers — across five separate company entities.',
     architecture:
-      'A single Next.js app on AWS serves multiple companies and generates PDF documents on the server.',
-    technologies: ['Next.js', 'Chakra UI', 'AWS'],
+      'A Next.js app on AWS Amplify (Gen 2) with an AppSync GraphQL API over DynamoDB. The five companies are kept separate by company-scoped records and Cognito user groups, and PDFs are generated in the browser with pdfmake.',
+    technologies: ['Next.js', 'Chakra UI', 'DynamoDB', 'AWS Amplify (Gen 2)'],
     image: '/images/inventory.webp',
   },
   {
@@ -77,10 +77,16 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Retail (milk tea chain)',
     role: 'Full-stack',
     description:
-      'Tracks equipment repairs across stores. Staff file tickets, technicians get scheduled visits, and each job ends in a service report. It has a desktop admin console and a mobile app for every role.',
+      'A field-service system for a milk-tea chain’s equipment repairs. Store staff file tickets, an admin groups them into scheduled technician visits, and every job closes with a service report — through a desktop admin console and mobile-friendly views for each role.',
     architecture:
-      'A web admin console and a mobile app share one PostgreSQL backend (via Prisma) on AWS, with a different view per role.',
-    technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
+      'One Next.js codebase serves role-specific desktop and mobile views on AWS Amplify (Gen 2). Public Lambdas handle auth, email, and storage, then call VPC Lambdas that reach PostgreSQL (RDS) via Prisma; Amazon Bedrock drafts ticket titles and initial priority. Cognito groups and store assignments drive what each role sees.',
+    technologies: [
+      'Next.js',
+      'Prisma',
+      'PostgreSQL',
+      'Amazon Bedrock',
+      'AWS Amplify (Gen 2)',
+    ],
     image: '/images/maintenance.webp',
   },
   {
@@ -88,10 +94,10 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Insurance (Japan)',
     role: 'Frontend',
     description:
-      'Customers buy and manage insurance policies. Agents handle sales and recruit sub-agents. It runs across multiple brands.',
+      'Customers buy and manage insurance policies, while agents handle sales and recruit sub-agents. It runs across several insurance brands from one codebase.',
     architecture:
-      'A Next.js frontend that serves several insurance brands from one shared codebase.',
-    technologies: ['Next.js', 'Chakra UI'],
+      'A Next.js frontend (Chakra UI) serving several brands from one shared codebase — brand flows through context and theming, with per-brand configuration driving the screens. It talks to the backend through a generated OpenAPI client.',
+    technologies: ['Next.js', 'Chakra UI', 'React Hook Form'],
     image: '/images/insurance.webp',
   },
   {
@@ -99,7 +105,7 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Sports / youth football',
     role: 'Reviewer',
     description:
-      'Handles team sign-up, schedules, and details for a national youth football tournament.',
+      'Team registration, schedules, and tournament details for a national youth football tournament, with sign-up flows for local and international teams.',
     architecture:
       'A Next.js frontend backed entirely by AWS Amplify (Gen 2) — Cognito for role-based logins, an AppSync and DynamoDB data layer for teams and registrations, and S3 for uploaded documents.',
     technologies: ['Next.js', 'AWS Amplify (Gen 2)'],
@@ -113,7 +119,7 @@ export const experiencesData = [
     title: 'System Engineer / Web Developer',
     company: 'O-Kun Frontier Innovations Inc.',
     description:
-      "I build full-stack web apps for clients in insurance, distribution, retail, and public records — handling the whole build, from frontend and backend to the AWS infrastructure and CI/CD that run it. I also help decide which services each project uses and how data flows through it. I scope requirements directly with clients and review my teammates' code.",
+      "I build full-stack web apps for clients in insurance, distribution, retail, and public records. I take projects across the whole stack — frontend, backend, and the AWS infrastructure and CI/CD behind them — and help decide which services each project uses and how its data flows. I also scope requirements directly with clients and review my teammates' code.",
     period: '2024 - present',
     technologies: [
       'Next.js',
@@ -129,7 +135,7 @@ export const experiencesData = [
     title: 'Senior Content & Curriculum Development Specialist',
     company: 'Pru Life UK',
     description:
-      'I designed training programs for insurance products, compliance, and sales. I ran the company learning platform with regional teams. That work gave me the insurance knowledge and the communication skills I use in engineering today.',
+      'I designed training programs for insurance products, compliance, and sales, and ran the company learning platform with regional teams. It is where I built the insurance domain knowledge and the knack for explaining complex things clearly that I still rely on as an engineer.',
     period: '2018 - 2024',
     technologies: [
       'Insurance domain',
