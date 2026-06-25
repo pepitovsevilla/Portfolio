@@ -184,12 +184,4 @@ export const skillGroups: readonly TSkillGroup[] = [
       { name: 'CI/CD' },
     ],
   },
-  {
-    label: 'System Design',
-    skills: [
-      { name: 'Choosing the right services' },
-      { name: 'Data flow' },
-      { name: 'API design' },
-    ],
-  },
 ] as const;
