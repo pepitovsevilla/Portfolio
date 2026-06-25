@@ -19,7 +19,7 @@ export const About = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
-      <SectionHeading heading="About Me" />
+      <SectionHeading heading="About" />
       <div className="-mt-5 flex flex-col items-center gap-8 md:flex-row md:items-start md:gap-10">
         <Image
           src="/images/profile.webp"
