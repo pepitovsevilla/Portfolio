@@ -26,8 +26,16 @@ const fadeInAnimationVariants = {
 };
 
 export const Project = ({ project, index }: TProps) => {
-  const { title, industry, role, description, technologies, link, image } =
-    project;
+  const {
+    title,
+    industry,
+    role,
+    description,
+    architecture,
+    technologies,
+    link,
+    image,
+  } = project;
 
   return (
     <motion.div
@@ -97,6 +105,14 @@ export const Project = ({ project, index }: TProps) => {
         {industry} · {role}
       </p>
       <p className="text-muted-foreground mb-4 flex-1">{description}</p>
+      {architecture && (
+        <div className="bg-muted/40 mb-4 rounded border-l-2 px-3 py-2">
+          <p className="text-muted-foreground mb-0.5 text-xs font-semibold uppercase tracking-wide">
+            How it&apos;s built
+          </p>
+          <p className="text-muted-foreground text-sm">{architecture}</p>
+        </div>
+      )}
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech) => (
           <span className="rounded-full border px-3 py-1 text-sm" key={tech}>
