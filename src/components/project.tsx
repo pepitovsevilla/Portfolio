@@ -35,6 +35,7 @@ export const Project = ({ project, index }: TProps) => {
     technologies,
     link,
     image,
+    inDevelopment,
   } = project;
 
   return (
@@ -101,10 +102,17 @@ export const Project = ({ project, index }: TProps) => {
           </span>
         )}
       </div>
-      <p className="text-muted-foreground mb-3 text-sm">
-        {industry} · {role}
-      </p>
-      <p className="text-muted-foreground mb-4 flex-1">{description}</p>
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        <p className="text-muted-foreground text-sm">
+          {industry} · {role}
+        </p>
+        {inDevelopment && (
+          <span className="rounded-full border border-amber-500/40 bg-amber-500/10 px-2 py-0.5 text-xs font-medium text-amber-700 dark:text-amber-400">
+            In development
+          </span>
+        )}
+      </div>
+      <p className="text-muted-foreground mb-4">{description}</p>
       {architecture && (
         <div className="bg-muted/40 mb-4 rounded border-l-2 px-3 py-2">
           <p className="text-muted-foreground mb-0.5 text-xs font-semibold uppercase tracking-wide">
@@ -113,7 +121,7 @@ export const Project = ({ project, index }: TProps) => {
           <p className="text-muted-foreground text-sm">{architecture}</p>
         </div>
       )}
-      <div className="flex flex-wrap gap-2">
+      <div className="mt-auto flex flex-wrap gap-2">
         {technologies.map((tech) => (
           <span className="rounded-full border px-3 py-1 text-sm" key={tech}>
             {tech}

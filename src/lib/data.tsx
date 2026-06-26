@@ -33,6 +33,8 @@ export type TProjectData = {
   technologies: readonly string[];
   /** Public live URL. If set, the card is treated as public (clickable, no privacy overlay). */
   link?: string;
+  /** Marks a project as still being built, shown as an "In development" badge. */
+  inDevelopment?: boolean;
   /** Card thumbnail. Private projects use a pre-blurred image baked into the file. */
   image?: string;
 };
@@ -60,6 +62,7 @@ export const projectsData: readonly TProjectData[] = [
     technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS Amplify (Gen 2)'],
     link: 'https://auctionph.com/',
     image: '/images/auction.webp',
+    inDevelopment: true,
   },
   {
     title: 'Inventory & Order Management System',
