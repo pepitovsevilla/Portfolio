@@ -32,8 +32,8 @@ export const About = () => {
         <div className="max-w-2xl text-center leading-7 md:text-left">
           <p className="mb-4">
             I&apos;m Pepito Sevilla, a software engineer based in Metro Manila.
-            I&apos;ve built software systems for businesses across insurance,
-            distribution, retail, and public records.
+            I&apos;ve helped build software systems for businesses across
+            insurance, distribution, retail, and public records.
           </p>
           <p className="mb-4">
             I work across the whole stack — frontend, API, database, and AWS
