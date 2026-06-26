@@ -20,16 +20,13 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
   return (
-    <div className="mt-12 flex w-full max-w-3xl flex-col gap-7 md:mt-16">
+    <div className="mt-12 flex w-full max-w-3xl flex-col gap-8 md:mt-16">
       {skillGroups.map((group) => (
-        <div
-          key={group.label}
-          className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-6"
-        >
-          <h3 className="text-muted-foreground shrink-0 text-sm font-semibold uppercase tracking-wide sm:w-48 sm:pt-1.5 sm:text-right">
+        <div key={group.label} className="flex flex-col gap-3">
+          <h3 className="text-muted-foreground text-center text-xs font-semibold uppercase tracking-wider md:text-left">
             {group.label}
           </h3>
-          <div className="flex flex-1 flex-wrap gap-2.5">
+          <div className="flex flex-wrap justify-center gap-2.5 md:justify-start">
             {group.skills.map((skill, index) => (
               <motion.span
                 key={skill.name}
