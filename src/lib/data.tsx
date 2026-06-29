@@ -123,7 +123,7 @@ export const experiencesData = [
     company: 'OFI Inc. (O-KUN Frontier Innovations)',
     link: 'https://o-fi.io/',
     description:
-      "I run client engagements end-to-end: scoping requirements directly with clients, then designing and architecting the solution and managing the project through to delivery. I build across the stack myself — frontend, backend, and AWS infrastructure with CI/CD — decide which services each project uses and how its data flows, and review my teammates' code.",
+      "I work directly with clients to clarify and scope requirements, then design and architect the solution and manage the project through to delivery. I build across the stack myself — frontend, backend, and AWS infrastructure with CI/CD — decide which services each project uses and how its data flows, and review my teammates' code.",
     period: '2024 - present',
     technologies: [
       'Next.js',
