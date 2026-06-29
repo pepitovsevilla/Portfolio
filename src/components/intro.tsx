@@ -54,9 +54,8 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        A full-stack software engineer based in Mandaluyong, Philippines. I
-        build web apps end-to-end — from the interface down to the API,
-        database, and cloud infrastructure underneath.
+        Based in Mandaluyong, Philippines. I take web apps from requirements
+        through to production — and own everything in between.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
