@@ -54,8 +54,8 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        Based in Mandaluyong, Philippines. I take web apps from requirements
-        through to production — and own everything in between.
+        Based in Mandaluyong, Philippines. I build web apps and work across
+        every stage, from requirements to production.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
