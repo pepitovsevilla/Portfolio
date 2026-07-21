@@ -14,6 +14,10 @@ export const links = [
     hash: '#experience',
   },
   {
+    name: 'Certifications',
+    hash: '#certifications',
+  },
+  {
     name: 'Projects',
     hash: '#projects',
   },
@@ -148,6 +152,23 @@ export const experiencesData = [
       'Training',
       'Documentation',
     ],
+  },
+] as const;
+
+export type TCertification = {
+  name: string;
+  issuer: string;
+  image: string;
+  verifyLink?: string;
+};
+
+export const certificationsData: readonly TCertification[] = [
+  {
+    name: 'AWS Certified Solutions Architect – Associate',
+    issuer: 'Amazon Web Services',
+    image: '/images/aws-saa.png',
+    verifyLink:
+      'https://www.credly.com/badges/76881eef-29e6-42f5-bab6-9eb382f35395/public_url',
   },
 ] as const;
 
