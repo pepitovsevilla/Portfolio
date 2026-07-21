@@ -29,7 +29,13 @@ export const Certifications = () => {
               viewport={{ once: true }}
               className="bg-background flex w-64 flex-col items-center gap-3 rounded-lg border p-6 text-center"
             >
-              <Image src={image} alt={name} width={120} height={120} />
+              <Image
+                src={image}
+                alt={name}
+                width={88}
+                height={88}
+                unoptimized
+              />
               <div>
                 <h3 className="font-medium">{name}</h3>
                 <p className="text-muted-foreground text-sm">{issuer}</p>

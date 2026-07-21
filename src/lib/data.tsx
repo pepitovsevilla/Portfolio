@@ -170,6 +170,11 @@ export const certificationsData: readonly TCertification[] = [
     verifyLink:
       'https://www.credly.com/badges/76881eef-29e6-42f5-bab6-9eb382f35395/public_url',
   },
+  {
+    name: 'Learning Design and Evaluation',
+    issuer: 'Ateneo Center for Organization Research and Development',
+    image: '/images/ateneo-cord.png',
+  },
 ] as const;
 
 export type TSkill = {
