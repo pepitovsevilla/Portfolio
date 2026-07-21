@@ -49,9 +49,9 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Membership organization',
     role: 'Full-stack',
     description:
-      'A platform for a membership organization: a member directory, events with QR-code attendance, and a member marketplace, plus a CMS for publishing news and content.',
+      "A membership organization's platform: a member directory, QR-code event check-in, a member marketplace, and a CMS for news and content.",
     architecture:
-      'A Next.js frontend backed by a FastAPI service and a Payload CMS over PostgreSQL, with editorial content from Sanity. It runs on AWS ECS Fargate, provisioned with CDK and shipped through blue-green deploys.',
+      'Next.js talks to a FastAPI service and Payload CMS, both over PostgreSQL, plus Sanity for editorial content. It runs on AWS ECS Fargate, provisioned with CDK, deployed blue-green.',
     technologies: ['Next.js', 'FastAPI', 'Payload CMS', 'PostgreSQL', 'AWS'],
     image: '/images/membership.webp',
   },
@@ -60,9 +60,9 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Legal / public-notice',
     role: 'Full-stack',
     description:
-      'A free public portal for Philippine court auction notices. It turns scanned Sheriff’s notices into structured records you can search and filter by region, property type, court, and auction date, and signed-in users can save listings and set auction-date reminders.',
+      'A free public portal for Philippine court auction notices. It turns scanned Sheriff’s notices into structured records people can search and filter by region, property type, court, and auction date. Signed-in users can save listings and set auction-date reminders.',
     architecture:
-      'A separate OCR pipeline parses notices into PostgreSQL (Aurora). A Next.js frontend reads them through AWS Amplify (Gen 2) GraphQL APIs backed by Prisma, with Cognito for accounts and S3 holding the original documents.',
+      'An OCR pipeline parses the scanned notices into PostgreSQL (Aurora). The Next.js frontend reads them through GraphQL APIs on AWS Amplify (Gen 2), backed by Prisma, with Cognito for accounts and S3 for the original documents.',
     technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS Amplify (Gen 2)'],
     link: 'https://auctionph.com/',
     image: '/images/auction.webp',
@@ -73,9 +73,9 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Veterinary distribution',
     role: 'Full-stack',
     description:
-      'An inventory, ordering, and accounting system for a veterinary-products distributor. It runs purchase and sales orders, tracks stock batches with expiry, manages payments, and generates PDF invoices and vouchers — across five separate company entities.',
+      'An inventory, ordering, and accounting system for a veterinary-products distributor, run across five separate company entities. It handles purchase and sales orders, tracks stock batches with expiry, manages payments, and generates PDF invoices and vouchers.',
     architecture:
-      'A Next.js app on AWS Amplify (Gen 2) with an AppSync GraphQL API over DynamoDB. The five companies are kept separate by company-scoped records and Cognito user groups, and PDFs are generated in the browser with pdfmake.',
+      'A Next.js app on AWS Amplify (Gen 2), with an AppSync GraphQL API over DynamoDB. Company-scoped records and Cognito user groups keep the five companies separate, and PDFs are generated in the browser with pdfmake.',
     technologies: ['Next.js', 'Chakra UI', 'DynamoDB', 'AWS Amplify (Gen 2)'],
     image: '/images/inventory.webp',
   },
@@ -84,9 +84,9 @@ export const projectsData: readonly TProjectData[] = [
     industry: 'Retail (milk tea chain)',
     role: 'Full-stack',
     description:
-      'A field-service system for a milk-tea chain’s equipment repairs. Store staff file tickets, an admin groups them into scheduled technician visits, and every job closes with a service report — through a desktop admin console and mobile-friendly views for each role.',
+      "A field-service system for a milk-tea chain's equipment repairs, with a desktop admin console and mobile-friendly views per role. Store staff file tickets, an admin groups them into scheduled technician visits, and every job closes with a service report.",
     architecture:
-      'A single Next.js app serves role-specific desktop and mobile views on AWS Amplify (Gen 2). Public Lambdas handle auth, email, and storage, then call VPC Lambdas that reach PostgreSQL (RDS) via Prisma; Amazon Bedrock drafts ticket titles and initial priority. Cognito groups and store assignments drive what each role sees.',
+      'A single Next.js app serves role-specific desktop and mobile views on AWS Amplify (Gen 2). Public Lambdas handle auth, email, and storage, then call VPC Lambdas that reach PostgreSQL (RDS) through Prisma. Amazon Bedrock drafts ticket titles and sets initial priority, and Cognito groups plus store assignments control what each role sees.',
     technologies: [
       'Next.js',
       'Prisma',
@@ -103,7 +103,7 @@ export const projectsData: readonly TProjectData[] = [
     description:
       'Customers buy and manage insurance policies, while agents handle sales and recruit sub-agents. It runs across several insurance brands.',
     architecture:
-      'A single Next.js app (Chakra UI) serves several brands — brand flows through context and theming, with per-brand configuration driving the screens. It talks to the backend through a generated OpenAPI client.',
+      'A single Next.js app (Chakra UI) serves several brands. Brand identity flows through context and theming, with per-brand configuration driving the screens, and it talks to the backend through a generated OpenAPI client.',
     technologies: ['Next.js', 'Chakra UI', 'React Hook Form'],
     image: '/images/insurance.webp',
   },
@@ -114,7 +114,7 @@ export const projectsData: readonly TProjectData[] = [
     description:
       'Team registration, schedules, and tournament details for a national youth football tournament, with sign-up flows for local and international teams.',
     architecture:
-      'A Next.js frontend backed entirely by AWS Amplify (Gen 2) — Cognito for role-based logins, an AppSync and DynamoDB data layer for teams and registrations, and S3 for uploaded documents.',
+      'A Next.js frontend backed entirely by AWS Amplify (Gen 2): Cognito for role-based logins, an AppSync/DynamoDB data layer for teams and registrations, and S3 for uploaded documents.',
     technologies: ['Next.js', 'AWS Amplify (Gen 2)'],
     link: 'https://www.laligayouth.com/',
     image: '/images/sports.webp',
@@ -127,7 +127,7 @@ export const experiencesData = [
     company: 'OFI Inc. (O-KUN Frontier Innovations)',
     link: 'https://o-fi.io/',
     description:
-      "I work directly with clients to clarify and scope requirements, then design and architect the solution and manage the project through to delivery. I build across the stack myself — frontend, backend, and AWS infrastructure with CI/CD — decide which services each project uses and how its data flows, and review my teammates' code.",
+      "I work directly with clients to scope requirements, then design the solution and see the project through to delivery. I build across the stack myself — frontend, backend, AWS infrastructure, CI/CD — choose which services each project uses, and review my teammates' code.",
     period: '2024 - present',
     technologies: [
       'Next.js',
@@ -144,7 +144,7 @@ export const experiencesData = [
     company: 'Pru Life UK',
     link: 'https://www.prulifeuk.com.ph/en/',
     description:
-      'I designed training programs for insurance products, compliance, and sales, and ran the company learning platform with regional teams. It is where I built the insurance domain knowledge and the knack for explaining complex things clearly that I still rely on as an engineer.',
+      "I designed training programs for insurance products, compliance, and sales, and ran the company's learning platform with regional teams. That job gave me the insurance domain knowledge and the habit of explaining complex things clearly — both still useful now as an engineer.",
     period: '2018 - 2024',
     technologies: [
       'Insurance domain',

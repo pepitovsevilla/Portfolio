@@ -31,14 +31,14 @@ export const About = () => {
         />
         <div className="max-w-2xl text-center leading-7 md:text-left">
           <p className="mb-4">
-            I&apos;ve helped build web apps end-to-end for businesses across
-            insurance, distribution, retail, and public records — frontend, API,
-            database, and the AWS infrastructure underneath.
+            I&apos;ve built web apps for businesses in insurance, distribution,
+            retail, and public records. On each one I work the whole stack:
+            frontend, API, database, and the AWS infrastructure underneath.
           </p>
           <p>
-            I also lead teams, and my background in learning and development
-            means I can explain technical work clearly and bridge the gap
-            between the technical and business sides.
+            I also lead teams. My background in learning and development taught
+            me to explain technical work in plain terms, so I&apos;m usually the
+            one translating between engineers and the business side.
           </p>
         </div>
       </div>
